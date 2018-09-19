@@ -75,18 +75,16 @@ class Board:
 
     # Performs the move up operation on the state of the current board
     def move_up(self):
-        # Check if move is valid
-        if self.validate_up():
-            # Get index of 0 value
-            indx = self.State.index(0)
-            # Deep copy the state to get a true copy of the state
-            newState = deepcopy(self.State)
-            # Get the value of what tile we are moving
-            valueIndex = newState[indx - 4]
-            # Perform the switch
-            newState[indx] = valueIndex
-            newState[indx - 4] = 0
-            return self.create_new_board(newState, valueIndex)
+        # Get index of 0 value
+        indx = self.State.index(0)
+        # Deep copy the state to get a true copy of the state
+        newState = deepcopy(self.State)
+        # Get the value of what tile we are moving
+        valueIndex = newState[indx - 4]
+        # Perform the switch
+        newState[indx] = valueIndex
+        newState[indx - 4] = 0
+        return self.create_new_board(newState, valueIndex)
 
 
     def validate_down(self):
@@ -96,13 +94,12 @@ class Board:
         return False
 
     def move_down(self):
-        if self.validate_down():
-            indx = self.State.index(0)
-            newState = deepcopy(self.State)
-            valueIndex = newState[indx + 4]
-            newState[indx] = valueIndex
-            newState[indx + 4] = 0
-            return self.create_new_board(newState, valueIndex)
+        indx = self.State.index(0)
+        newState = deepcopy(self.State)
+        valueIndex = newState[indx + 4]
+        newState[indx] = valueIndex
+        newState[indx + 4] = 0
+        return self.create_new_board(newState, valueIndex)
 
     def validate_left(self):
         i = self.State.index(0)
@@ -111,13 +108,12 @@ class Board:
         return False
 
     def move_left(self):
-        if self.validate_left():
-            indx = self.State.index(0)
-            newState = deepcopy(self.State)
-            valueIndex = newState[indx - 1]
-            newState[indx] = valueIndex
-            newState[indx - 1] = 0
-            return self.create_new_board(newState, valueIndex)
+        indx = self.State.index(0)
+        newState = deepcopy(self.State)
+        valueIndex = newState[indx - 1]
+        newState[indx] = valueIndex
+        newState[indx - 1] = 0
+        return self.create_new_board(newState, valueIndex)
 
     def validate_right(self):
         i = self.State.index(0)
@@ -126,13 +122,12 @@ class Board:
         return False
 
     def move_right(self):
-        if self.validate_right():
-            indx = self.State.index(0)
-            newState = deepcopy(self.State)
-            valueIndex = newState[indx + 1]
-            newState[indx] = valueIndex
-            newState[indx + 1] = 0
-            return self.create_new_board(newState, valueIndex)
+        indx = self.State.index(0)
+        newState = deepcopy(self.State)
+        valueIndex = newState[indx + 1]
+        newState[indx] = valueIndex
+        newState[indx + 1] = 0
+        return self.create_new_board(newState, valueIndex)
 
     def create_new_board(self, newState, valueIndex):
         # Determine which heuristic we want to use:
