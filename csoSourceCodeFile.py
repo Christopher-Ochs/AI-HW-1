@@ -7,6 +7,7 @@ TileGame Class
 import uuid
 from copy import deepcopy
 import heapq
+import time
 
 # Board class will handle states, IDs, cost values, asd heuristics
 class Board:
@@ -156,6 +157,8 @@ class Board:
             else:
                 return Board(uuid.uuid4(), self.ID, newState, self.GoalState, self.HNControl, (self.GN + 1), self.heuristic2())
 
+    # NOTE: Heuristics could be optimized, but discussed with the professor.  Will leave heuristic optimization for
+    # later.  Instead a time out function has been implemented for searches that take longer than 5 minutes to complete.
     def heuristic1(self):
         count = 0
         for i in self.get_state():
@@ -197,54 +200,74 @@ def constructState(states):
     return x
 
 
-def performSearch(currentBoard, goalBoard):
+def performSearch(current_board, goalBoard):
+    # Initialize the open list for the queue
     openList = []
-    heapq.heappush(openList, (currentBoard.FN, currentBoard))
+    # Initialize the closed list
     closedList = []
+    # Add first board to the queue
+    heapq.heappush(openList, (current_board.FN, current_board))
+
+    # Create start time for timeout
+    start_time = time.time()
+    # timeout variable
+    time_out = False
+
     while len(openList) != 0:
-        if currentBoard == goalBoard:
+        if current_board == goalBoard:
             break
-        if currentBoard not in closedList:
-            if currentBoard.validate_left():
-                heapq.heappush(openList, (currentBoard.FN, currentBoard.move_left()))
-            if currentBoard.validate_down():
-                heapq.heappush(openList, (currentBoard.FN, currentBoard.move_down()))
-            if currentBoard.validate_up():
-                heapq.heappush(openList, (currentBoard.FN, currentBoard.move_up()))
-            if currentBoard.validate_right():
-                heapq.heappush(openList, (currentBoard.FN, currentBoard.move_right()))
-            closedList.append(currentBoard)
-        currentBoard = deepcopy(heapq.heappop(openList)[1])
+        if current_board not in closedList:
+            if current_board.validate_left():
+                heapq.heappush(openList, (current_board.FN, current_board.move_left()))
+            if current_board.validate_down():
+                heapq.heappush(openList, (current_board.FN, current_board.move_down()))
+            if current_board.validate_up():
+                heapq.heappush(openList, (current_board.FN, current_board.move_up()))
+            if current_board.validate_right():
+                heapq.heappush(openList, (current_board.FN, current_board.move_right()))
+            closedList.append(current_board)
+        current_board = deepcopy(heapq.heappop(openList)[1])
+        if time.time()-start_time > 30:
+            time_out = True
+            break
 
-    count = 1
-    while currentBoard.get_id() != 0:
-        currentBoard.print_board_info()
-        for x in closedList:
-            if currentBoard.get_parent_id() == x.get_id():
-                currentBoard = deepcopy(x)
-                break
-        count = count + 1
+    if time_out:
+        print("Error: Time limit for search exceeded")
+    else:
+        count = 1
+        while current_board.get_id() != 0:
+            current_board.print_board_info()
+            for x in closedList:
+                if current_board.get_parent_id() == x.get_id():
+                    current_board = deepcopy(x)
+                    break
+            count = count + 1
 
-    currentBoard.print_board_info()
-    print("Number of Moves Required = " + str(count))
-    print("Number of Nodes in Search Process List = " + str(len(openList) + len(closedList)))
+        current_board.print_board_info()
+        print("Number of Moves Required = " + str(count))
+
+    print("Number of Nodes Expanded = " + str(len(openList) + len(closedList)))
     print("Number of Nodes in Closed List = " + str(len(closedList)))
+    print("===================================================")
+    print("===================================================")
+    print("===================================================\n")
 
 
 def main():
     # get user input
-    #startList = getInput("Please input the starting state with 16 digits separated by a space: ")
-    #goalList = getInput("Please input the goal state with 16 digits separated by a space: ")
+    # startList = getInput("Please input the starting state with 16 digits separated by a space: ")
+    # goalList = getInput("Please input the goal state with 16 digits separated by a space: ")
 
-    #startList = [1, 0, 3, 4, 5, 2, 7, 8, 9, 6, 15, 11, 13, 10, 14, 12]
-    startList = [5, 1, 3, 4, 2, 10, 6, 8, 13, 9, 7, 12, 0, 14, 11, 15]
+    # startList = [5, 1, 3, 4, 2, 10, 6, 8, 13, 9, 7, 12, 0, 14, 11, 15]
+    startList = [1, 0, 3, 4, 5, 2, 7, 8, 9, 6, 15, 11, 13, 10, 14, 12]
     goalList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0]
-    startState = constructState(startList)
-    goalState = constructState(goalList)
-    currentBoard = Board(0, 0, startState, goalState, 2, 0, 0)
-    goalBoard = Board(-1, -1, goalState, goalState, 2, 0, 0)
+    for control in range(0, 3):
+        startState = constructState(startList)
+        goalState = constructState(goalList)
+        currentBoard = Board(0, 0, startState, goalState, control, 0, 0)
+        goalBoard = Board(-1, -1, goalState, goalState, control, 0, 0)
 
-    performSearch(currentBoard, goalBoard)
+        performSearch(currentBoard, goalBoard)
 
 
 if __name__ == '__main__':
