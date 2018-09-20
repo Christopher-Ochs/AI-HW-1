@@ -1,0 +1,942 @@
+===================================================
+The ID of this board is: f9937f31-0f2a-4b81-a163-21ac760597a6 The parent ID is: 20bc36c4-cca1-4466-a01d-408b50795930
+The G(N) value is: 11
+The H(N) value is: 0
+The F(N) value is: 11
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 15, 0]
+===================================================
+
+The ID of this board is: 20bc36c4-cca1-4466-a01d-408b50795930 The parent ID is: 0eb3cc45-3d6e-45a1-88a9-59056863a68c
+The G(N) value is: 10
+The H(N) value is: 0
+The F(N) value is: 10
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 0, 15]
+===================================================
+
+The ID of this board is: 0eb3cc45-3d6e-45a1-88a9-59056863a68c The parent ID is: d8375052-b078-4cd5-b998-b2f5a62de11e
+The G(N) value is: 9
+The H(N) value is: 0
+The F(N) value is: 9
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 0, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: d8375052-b078-4cd5-b998-b2f5a62de11e The parent ID is: 117bbd26-097f-4543-be7d-c8e282d66254
+The G(N) value is: 8
+The H(N) value is: 0
+The F(N) value is: 8
+
+[1, 2, 3, 4]
+[5, 6, 0, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 117bbd26-097f-4543-be7d-c8e282d66254 The parent ID is: 08259d1a-4ad5-42ca-8b60-932a0401524d
+The G(N) value is: 7
+The H(N) value is: 0
+The F(N) value is: 7
+
+[1, 2, 3, 4]
+[5, 0, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 08259d1a-4ad5-42ca-8b60-932a0401524d The parent ID is: 2112ae58-42be-41e4-b218-365354ec9c61
+The G(N) value is: 6
+The H(N) value is: 0
+The F(N) value is: 6
+
+[1, 0, 3, 4]
+[5, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 2112ae58-42be-41e4-b218-365354ec9c61 The parent ID is: b66dbd9c-f438-4a75-9c98-aa17b8ea6379
+The G(N) value is: 5
+The H(N) value is: 0
+The F(N) value is: 5
+
+[0, 1, 3, 4]
+[5, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: b66dbd9c-f438-4a75-9c98-aa17b8ea6379 The parent ID is: ede3e827-3327-4c8b-a34b-442ff137079b
+The G(N) value is: 4
+The H(N) value is: 0
+The F(N) value is: 4
+
+[5, 1, 3, 4]
+[0, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: ede3e827-3327-4c8b-a34b-442ff137079b The parent ID is: 568d5978-b3e0-483c-8fac-5fd60912085f
+The G(N) value is: 3
+The H(N) value is: 0
+The F(N) value is: 3
+
+[5, 1, 3, 4]
+[2, 0, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 568d5978-b3e0-483c-8fac-5fd60912085f The parent ID is: c22a834c-fa5f-4e62-a9c1-1d0cefdbf18d
+The G(N) value is: 2
+The H(N) value is: 0
+The F(N) value is: 2
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[9, 0, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: c22a834c-fa5f-4e62-a9c1-1d0cefdbf18d The parent ID is: 0
+The G(N) value is: 1
+The H(N) value is: 0
+The F(N) value is: 1
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[0, 9, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 0 The parent ID is: 0
+The G(N) value is: 0
+The H(N) value is: 0
+The F(N) value is: 0
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[13, 9, 7, 12]
+[0, 14, 11, 15]
+===================================================
+
+Solution found for the above path using BFS
+Solution fount in 12.653188228607178 seconds
+Number of Moves Required = 12
+Number of Nodes Expanded = 11468
+Number of Nodes in Closed List = 4388
+===================================================
+===================================================
+
+===================================================
+The ID of this board is: 1b2ac5d1-19bf-4e30-a5ea-468e2bf78546 The parent ID is: abb2c644-9f59-425a-b178-fb4156bc24a9
+The G(N) value is: 47
+The H(N) value is: 2
+The F(N) value is: 49
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 15, 0]
+===================================================
+
+The ID of this board is: abb2c644-9f59-425a-b178-fb4156bc24a9 The parent ID is: bfe0859f-32c7-4056-a95e-47927885629d
+The G(N) value is: 37
+The H(N) value is: 3
+The F(N) value is: 40
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 0, 15]
+===================================================
+
+The ID of this board is: bfe0859f-32c7-4056-a95e-47927885629d The parent ID is: 8d76a611-8006-45a7-986a-4189a2c86b85
+The G(N) value is: 27
+The H(N) value is: 4
+The F(N) value is: 31
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 0, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 8d76a611-8006-45a7-986a-4189a2c86b85 The parent ID is: 1b4b86fb-663e-43d4-aa85-7c7afcd2aeaf
+The G(N) value is: 26
+The H(N) value is: 5
+The F(N) value is: 31
+
+[1, 2, 3, 4]
+[5, 6, 0, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 1b4b86fb-663e-43d4-aa85-7c7afcd2aeaf The parent ID is: 10cb5136-40e1-407a-99b9-7afdbf55509d
+The G(N) value is: 25
+The H(N) value is: 6
+The F(N) value is: 31
+
+[1, 2, 3, 4]
+[5, 0, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 10cb5136-40e1-407a-99b9-7afdbf55509d The parent ID is: 096f72dc-33b3-4eed-a264-352bd7ee725c
+The G(N) value is: 24
+The H(N) value is: 7
+The F(N) value is: 31
+
+[1, 0, 3, 4]
+[5, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 096f72dc-33b3-4eed-a264-352bd7ee725c The parent ID is: 7baa9a52-5b5f-4a95-9009-efbb8ccf891d
+The G(N) value is: 23
+The H(N) value is: 8
+The F(N) value is: 31
+
+[0, 1, 3, 4]
+[5, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 7baa9a52-5b5f-4a95-9009-efbb8ccf891d The parent ID is: 0e3f10d0-8a64-4c1c-9c8c-5656125c830e
+The G(N) value is: 22
+The H(N) value is: 8
+The F(N) value is: 30
+
+[5, 1, 3, 4]
+[0, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 0e3f10d0-8a64-4c1c-9c8c-5656125c830e The parent ID is: cdcc1d79-5ec1-434a-b231-cc0686c19a52
+The G(N) value is: 21
+The H(N) value is: 9
+The F(N) value is: 30
+
+[5, 1, 3, 4]
+[2, 0, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: cdcc1d79-5ec1-434a-b231-cc0686c19a52 The parent ID is: 39e3d771-dd4f-454f-945a-7dce9a13a474
+The G(N) value is: 11
+The H(N) value is: 10
+The F(N) value is: 21
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[9, 0, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 39e3d771-dd4f-454f-945a-7dce9a13a474 The parent ID is: 0
+The G(N) value is: 10
+The H(N) value is: 11
+The F(N) value is: 21
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[0, 9, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 0 The parent ID is: 0
+The G(N) value is: 0
+The H(N) value is: 0
+The F(N) value is: 0
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[13, 9, 7, 12]
+[0, 14, 11, 15]
+===================================================
+
+Solution found for the above path using A* Heuristic 1
+Solution fount in 4.788780927658081 seconds
+Number of Moves Required = 12
+Number of Nodes Expanded = 6913
+Number of Nodes in Closed List = 2651
+===================================================
+===================================================
+
+===================================================
+The ID of this board is: be22c8b9-5d16-4114-8a19-7473da330099 The parent ID is: 451ce184-f6f7-4c76-85a6-849158d30ab0
+The G(N) value is: 47
+The H(N) value is: 2
+The F(N) value is: 49
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 15, 0]
+===================================================
+
+The ID of this board is: 451ce184-f6f7-4c76-85a6-849158d30ab0 The parent ID is: 648d491c-0baa-45c7-b4be-7b398498e45e
+The G(N) value is: 37
+The H(N) value is: 4
+The F(N) value is: 41
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 0, 15]
+===================================================
+
+The ID of this board is: 648d491c-0baa-45c7-b4be-7b398498e45e The parent ID is: c2c7bbd3-583a-48ba-8599-ba929bb0bce7
+The G(N) value is: 27
+The H(N) value is: 6
+The F(N) value is: 33
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 0, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: c2c7bbd3-583a-48ba-8599-ba929bb0bce7 The parent ID is: 5d513bdb-d498-4af8-844e-5b4b71c0edeb
+The G(N) value is: 26
+The H(N) value is: 8
+The F(N) value is: 34
+
+[1, 2, 3, 4]
+[5, 6, 0, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 5d513bdb-d498-4af8-844e-5b4b71c0edeb The parent ID is: 2b33f78b-675a-4721-b3c5-197af5e06f2a
+The G(N) value is: 25
+The H(N) value is: 10
+The F(N) value is: 35
+
+[1, 2, 3, 4]
+[5, 0, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 2b33f78b-675a-4721-b3c5-197af5e06f2a The parent ID is: abb1ba43-0f93-48f8-8156-d51da9e9f42f
+The G(N) value is: 24
+The H(N) value is: 12
+The F(N) value is: 36
+
+[1, 0, 3, 4]
+[5, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: abb1ba43-0f93-48f8-8156-d51da9e9f42f The parent ID is: 2ee718c9-67fd-4449-af54-8256b72e3277
+The G(N) value is: 23
+The H(N) value is: 12
+The F(N) value is: 35
+
+[0, 1, 3, 4]
+[5, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 2ee718c9-67fd-4449-af54-8256b72e3277 The parent ID is: d8eaa367-77b7-4f05-8ed2-360629a1c6a0
+The G(N) value is: 22
+The H(N) value is: 12
+The F(N) value is: 34
+
+[5, 1, 3, 4]
+[0, 2, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: d8eaa367-77b7-4f05-8ed2-360629a1c6a0 The parent ID is: 925e19aa-1317-41fc-8b4e-a6e236b3c1e7
+The G(N) value is: 21
+The H(N) value is: 12
+The F(N) value is: 33
+
+[5, 1, 3, 4]
+[2, 0, 6, 8]
+[9, 10, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 925e19aa-1317-41fc-8b4e-a6e236b3c1e7 The parent ID is: 8b6ad1d8-8c0d-46c2-a221-cd64dac66429
+The G(N) value is: 11
+The H(N) value is: 14
+The F(N) value is: 25
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[9, 0, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 8b6ad1d8-8c0d-46c2-a221-cd64dac66429 The parent ID is: 0
+The G(N) value is: 10
+The H(N) value is: 14
+The F(N) value is: 24
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[0, 9, 7, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 0 The parent ID is: 0
+The G(N) value is: 0
+The H(N) value is: 0
+The F(N) value is: 0
+
+[5, 1, 3, 4]
+[2, 10, 6, 8]
+[13, 9, 7, 12]
+[0, 14, 11, 15]
+===================================================
+
+Solution found for the above path using A* Heuristic 2
+Solution fount in 0.5329859256744385 seconds
+Number of Moves Required = 12
+Number of Nodes Expanded = 1780
+Number of Nodes in Closed List = 673
+===================================================
+===================================================
+
+/Users/christopherochs/HackAThon/TwitterSpotifyML/RevUC2018/revuc-env/bin/python3.6 "/Users/christopherochs/School/2018/AI/AI HW 1/csoSourceCodeFile.py"
+Please input the starting state with 16 digits separated by a space: 1	0	3	4	5	2	7	8	9	6	15	11	13	10	14	12
+Please input the goal state with 16 digits separated by a space (enter nothing to use default):
+===================================================
+The ID of this board is: cceb81e9-f05e-4a49-9a2c-4e2ed9a8fa67 The parent ID is: 24968997-839d-4543-af72-073e73712f33
+The G(N) value is: 7
+The H(N) value is: 0
+The F(N) value is: 7
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 15, 0]
+===================================================
+
+The ID of this board is: 24968997-839d-4543-af72-073e73712f33 The parent ID is: 89d6d52e-1204-48d3-8001-38cfb3294198
+The G(N) value is: 6
+The H(N) value is: 0
+The F(N) value is: 6
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 0]
+[13, 14, 15, 12]
+===================================================
+
+The ID of this board is: 89d6d52e-1204-48d3-8001-38cfb3294198 The parent ID is: e989e6d8-bf7d-43b5-a387-65639369b83c
+The G(N) value is: 5
+The H(N) value is: 0
+The F(N) value is: 5
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 0, 11]
+[13, 14, 15, 12]
+===================================================
+
+The ID of this board is: e989e6d8-bf7d-43b5-a387-65639369b83c The parent ID is: b12a7f54-0fdc-4ac7-bcdd-9b89e3d1a43c
+The G(N) value is: 4
+The H(N) value is: 0
+The F(N) value is: 4
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 15, 11]
+[13, 14, 0, 12]
+===================================================
+
+The ID of this board is: b12a7f54-0fdc-4ac7-bcdd-9b89e3d1a43c The parent ID is: 9241f098-3ff5-41e7-a1f1-319537024123
+The G(N) value is: 3
+The H(N) value is: 0
+The F(N) value is: 3
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 15, 11]
+[13, 0, 14, 12]
+===================================================
+
+The ID of this board is: 9241f098-3ff5-41e7-a1f1-319537024123 The parent ID is: 2062f2ed-4839-4cc8-bd97-ab5e01e2f265
+The G(N) value is: 2
+The H(N) value is: 0
+The F(N) value is: 2
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 0, 15, 11]
+[13, 10, 14, 12]
+===================================================
+
+The ID of this board is: 2062f2ed-4839-4cc8-bd97-ab5e01e2f265 The parent ID is: 0
+The G(N) value is: 1
+The H(N) value is: 0
+The F(N) value is: 1
+
+[1, 2, 3, 4]
+[5, 0, 7, 8]
+[9, 6, 15, 11]
+[13, 10, 14, 12]
+===================================================
+
+The ID of this board is: 0 The parent ID is: 0
+The G(N) value is: 0
+The H(N) value is: 0
+The F(N) value is: 0
+
+[1, 0, 3, 4]
+[5, 2, 7, 8]
+[9, 6, 15, 11]
+[13, 10, 14, 12]
+===================================================
+
+Solution found for the above path using BFS
+Solution fount in 0.14464306831359863 seconds
+Number of Moves Required = 8
+Number of Nodes Expanded = 854
+Number of Nodes in Closed List = 322
+===================================================
+===================================================
+
+===================================================
+/Users/christopherochs/HackAThon/TwitterSpotifyML/RevUC2018/revuc-env/bin/python3.6 "/Users/christopherochs/School/2018/AI/AI HW 1/csoSourceCodeFile.py"
+Please input the starting state with 16 digits separated by a space: 1	0	3	4	5	2	7	8	9	6	15	11	13	10	14	12
+Please input the goal state with 16 digits separated by a space (enter nothing to use default):
+===================================================
+The ID of this board is: f2b77663-590b-4b94-9441-d531cc77d113 The parent ID is: e25b17e3-0db9-4ff2-bff3-a8fab7c1a8e3
+The G(N) value is: 7
+The H(N) value is: 0
+The F(N) value is: 7
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 15, 0]
+===================================================
+
+The ID of this board is: e25b17e3-0db9-4ff2-bff3-a8fab7c1a8e3 The parent ID is: 4caeae4c-d9ea-401e-841a-9c0c18163593
+The G(N) value is: 6
+The H(N) value is: 0
+The F(N) value is: 6
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 0]
+[13, 14, 15, 12]
+===================================================
+
+The ID of this board is: 4caeae4c-d9ea-401e-841a-9c0c18163593 The parent ID is: f2d1c047-8898-4450-9e0f-30596c66e0c1
+The G(N) value is: 5
+The H(N) value is: 0
+The F(N) value is: 5
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 0, 11]
+[13, 14, 15, 12]
+===================================================
+
+The ID of this board is: f2d1c047-8898-4450-9e0f-30596c66e0c1 The parent ID is: 3466c724-e1a2-4795-a2da-03e88ee122f0
+The G(N) value is: 4
+The H(N) value is: 0
+The F(N) value is: 4
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 15, 11]
+[13, 14, 0, 12]
+===================================================
+
+The ID of this board is: 3466c724-e1a2-4795-a2da-03e88ee122f0 The parent ID is: 579e698b-0b5f-4bde-bbd2-4bd40055ec97
+The G(N) value is: 3
+The H(N) value is: 0
+The F(N) value is: 3
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 15, 11]
+[13, 0, 14, 12]
+===================================================
+
+The ID of this board is: 579e698b-0b5f-4bde-bbd2-4bd40055ec97 The parent ID is: b5988766-4755-40fd-8fa4-a048ed9a2e9a
+The G(N) value is: 2
+The H(N) value is: 0
+The F(N) value is: 2
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 0, 15, 11]
+[13, 10, 14, 12]
+===================================================
+
+The ID of this board is: b5988766-4755-40fd-8fa4-a048ed9a2e9a The parent ID is: 0
+The G(N) value is: 1
+The H(N) value is: 0
+The F(N) value is: 1
+
+[1, 2, 3, 4]
+[5, 0, 7, 8]
+[9, 6, 15, 11]
+[13, 10, 14, 12]
+===================================================
+
+The ID of this board is: 0 The parent ID is: 0
+The G(N) value is: 0
+The H(N) value is: 0
+The F(N) value is: 0
+
+[1, 0, 3, 4]
+[5, 2, 7, 8]
+[9, 6, 15, 11]
+[13, 10, 14, 12]
+===================================================
+
+Solution found for the above path using BFS
+Solution fount in 0.13073420524597168 seconds
+Number of Moves Required = 8
+Number of Nodes Expanded = 854
+Number of Nodes in Closed List = 322
+===================================================
+===================================================
+
+===================================================
+Error: Time limit for search exceeded
+No solution found for the board using A* Heuristic 1
+[1, 0, 3, 4]
+[5, 2, 7, 8]
+[9, 6, 15, 11]
+[13, 10, 14, 12]
+Number of Nodes Expanded = 50435
+Number of Nodes in Closed List = 20381
+===================================================
+===================================================
+
+===================================================
+Error: Time limit for search exceeded
+No solution found for the board using A* Heuristic 2
+[1, 0, 3, 4]
+[5, 2, 7, 8]
+[9, 6, 15, 11]
+[13, 10, 14, 12]
+Number of Nodes Expanded = 50625
+Number of Nodes in Closed List = 20139
+===================================================
+===================================================
+
+/Users/christopherochs/HackAThon/TwitterSpotifyML/RevUC2018/revuc-env/bin/python3.6 "/Users/christopherochs/School/2018/AI/AI HW 1/csoSourceCodeFile.py"
+Please input the starting state with 16 digits separated by a space: 2	0	3	4	1	5	7	8	9	6	10	12	13	14	11	15
+Please input the goal state with 16 digits separated by a space (enter nothing to use default): 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 0
+===================================================
+The ID of this board is: 2f0e97bf-169e-4efb-a8a6-93d7dfbd3fba The parent ID is: 330d87eb-81ff-4f00-a3a4-444fa1ab3638
+The G(N) value is: 7
+The H(N) value is: 0
+The F(N) value is: 7
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 15, 0]
+===================================================
+
+The ID of this board is: 330d87eb-81ff-4f00-a3a4-444fa1ab3638 The parent ID is: a6dbd815-e0d8-4477-80d3-f013a275f7d6
+The G(N) value is: 6
+The H(N) value is: 0
+The F(N) value is: 6
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 0, 15]
+===================================================
+
+The ID of this board is: a6dbd815-e0d8-4477-80d3-f013a275f7d6 The parent ID is: 793becc5-3aa4-4f83-90ae-b56bb491714c
+The G(N) value is: 5
+The H(N) value is: 0
+The F(N) value is: 5
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 0, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 793becc5-3aa4-4f83-90ae-b56bb491714c The parent ID is: 4259f94f-b449-4793-bd47-3190ae01935c
+The G(N) value is: 4
+The H(N) value is: 0
+The F(N) value is: 4
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 0, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 4259f94f-b449-4793-bd47-3190ae01935c The parent ID is: b7c706df-d48e-4ae1-be3d-7771e3f3e29e
+The G(N) value is: 3
+The H(N) value is: 0
+The F(N) value is: 3
+
+[1, 2, 3, 4]
+[5, 0, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: b7c706df-d48e-4ae1-be3d-7771e3f3e29e The parent ID is: 45c5efa3-82a8-45df-80d9-e405e8c9d440
+The G(N) value is: 2
+The H(N) value is: 0
+The F(N) value is: 2
+
+[1, 2, 3, 4]
+[0, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 45c5efa3-82a8-45df-80d9-e405e8c9d440 The parent ID is: 0
+The G(N) value is: 1
+The H(N) value is: 0
+The F(N) value is: 1
+
+[0, 2, 3, 4]
+[1, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 0 The parent ID is: 0
+The G(N) value is: 0
+The H(N) value is: 0
+The F(N) value is: 0
+
+[2, 0, 3, 4]
+[1, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+Solution found for the above path using BFS
+Solution fount in 0.16289782524108887 seconds
+Number of Moves Required = 8
+Number of Nodes Expanded = 980
+Number of Nodes in Closed List = 369
+===================================================
+===================================================
+
+===================================================
+The ID of this board is: 28c0b991-ea98-4266-a52d-c832611ad22d The parent ID is: 230c5499-f7c6-44c3-9c13-8f3548fa2d17
+The G(N) value is: 34
+The H(N) value is: 2
+The F(N) value is: 36
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 15, 0]
+===================================================
+
+The ID of this board is: 230c5499-f7c6-44c3-9c13-8f3548fa2d17 The parent ID is: a2d8f6e7-43a5-444b-8471-9d01a2bc1f1e
+The G(N) value is: 24
+The H(N) value is: 3
+The F(N) value is: 27
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 0, 15]
+===================================================
+
+The ID of this board is: a2d8f6e7-43a5-444b-8471-9d01a2bc1f1e The parent ID is: f6b6d2d5-29c2-4cf6-9c8b-fed6771dd669
+The G(N) value is: 14
+The H(N) value is: 4
+The F(N) value is: 18
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 0, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: f6b6d2d5-29c2-4cf6-9c8b-fed6771dd669 The parent ID is: ae1ff578-a6b0-44d8-9260-ef8368bf1f7d
+The G(N) value is: 4
+The H(N) value is: 5
+The F(N) value is: 9
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 0, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: ae1ff578-a6b0-44d8-9260-ef8368bf1f7d The parent ID is: ea2876c0-5606-436a-88c4-7c346b63e33e
+The G(N) value is: 3
+The H(N) value is: 6
+The F(N) value is: 9
+
+[1, 2, 3, 4]
+[5, 0, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: ea2876c0-5606-436a-88c4-7c346b63e33e The parent ID is: 666e2d5f-b548-4a44-9e3d-58a80ad2b60f
+The G(N) value is: 2
+The H(N) value is: 7
+The F(N) value is: 9
+
+[1, 2, 3, 4]
+[0, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 666e2d5f-b548-4a44-9e3d-58a80ad2b60f The parent ID is: 0
+The G(N) value is: 1
+The H(N) value is: 8
+The F(N) value is: 9
+
+[0, 2, 3, 4]
+[1, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 0 The parent ID is: 0
+The G(N) value is: 0
+The H(N) value is: 0
+The F(N) value is: 0
+
+[2, 0, 3, 4]
+[1, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+Solution found for the above path using A* Heuristic 1
+Solution fount in 182.14502596855164 seconds
+Number of Moves Required = 8
+Number of Nodes Expanded = 37850
+Number of Nodes in Closed List = 15300
+===================================================
+===================================================
+
+===================================================
+The ID of this board is: 53860005-980e-4574-88eb-2e52e4edec07 The parent ID is: dc741840-ed07-4d1f-8f21-15631b72cd22
+The G(N) value is: 34
+The H(N) value is: 2
+The F(N) value is: 36
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 15, 0]
+===================================================
+
+The ID of this board is: dc741840-ed07-4d1f-8f21-15631b72cd22 The parent ID is: e80842d3-fd70-4bf7-ae2d-20a5da1ed7d4
+The G(N) value is: 24
+The H(N) value is: 4
+The F(N) value is: 28
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 11, 12]
+[13, 14, 0, 15]
+===================================================
+
+The ID of this board is: e80842d3-fd70-4bf7-ae2d-20a5da1ed7d4 The parent ID is: b23823d0-68a4-4784-8893-649e47427574
+The G(N) value is: 14
+The H(N) value is: 6
+The F(N) value is: 20
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 10, 0, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: b23823d0-68a4-4784-8893-649e47427574 The parent ID is: 3d399133-9301-4e8d-b784-0827b820f629
+The G(N) value is: 4
+The H(N) value is: 8
+The F(N) value is: 12
+
+[1, 2, 3, 4]
+[5, 6, 7, 8]
+[9, 0, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 3d399133-9301-4e8d-b784-0827b820f629 The parent ID is: 4649ea82-68fc-4099-8cbf-9b26c6025780
+The G(N) value is: 3
+The H(N) value is: 10
+The F(N) value is: 13
+
+[1, 2, 3, 4]
+[5, 0, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 4649ea82-68fc-4099-8cbf-9b26c6025780 The parent ID is: 95153a2b-aca5-42fc-bf48-9fdebccd0058
+The G(N) value is: 2
+The H(N) value is: 12
+The F(N) value is: 14
+
+[1, 2, 3, 4]
+[0, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 95153a2b-aca5-42fc-bf48-9fdebccd0058 The parent ID is: 0
+The G(N) value is: 1
+The H(N) value is: 12
+The F(N) value is: 13
+
+[0, 2, 3, 4]
+[1, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+The ID of this board is: 0 The parent ID is: 0
+The G(N) value is: 0
+The H(N) value is: 0
+The F(N) value is: 0
+
+[2, 0, 3, 4]
+[1, 5, 7, 8]
+[9, 6, 10, 12]
+[13, 14, 11, 15]
+===================================================
+
+Solution found for the above path using A* Heuristic 2
+Solution fount in 5.017514944076538 seconds
+Number of Moves Required = 8
+Number of Nodes Expanded = 6560
+Number of Nodes in Closed List = 2602
+===================================================
+===================================================
+

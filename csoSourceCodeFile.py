@@ -9,6 +9,7 @@ from copy import deepcopy
 import heapq
 import time
 
+
 # Board class will handle states, IDs, cost values, asd heuristics
 class Board:
     def __init__(self, id, parentID, state, goalState, control, gn, hn):
@@ -61,9 +62,9 @@ class Board:
 
     # Print out all necessary board information
     def print_board_info(self):
-        print("The ID of this board is: " + str(self.get_id()) + "\n")
-        print("The G(N) value is: " + str(self.GN) + "\n")
-        print("The H(N) value is: " + str(self.HN) + "\n")
+        print("The ID of this board is: " + str(self.get_id()) + " The parent ID is: " + str(self.get_parent_id()))
+        print("The G(N) value is: " + str(self.GN))
+        print("The H(N) value is: " + str(self.HN))
         print("The F(N) value is: " + str(self.FN) + "\n")
         self.print_state()
 
@@ -86,7 +87,6 @@ class Board:
         newState[indx] = valueIndex
         newState[indx - 4] = 0
         return self.create_new_board(newState, valueIndex)
-
 
     def validate_down(self):
         i = self.State.index(0)
@@ -163,11 +163,13 @@ class Board:
         count = 0
         for i in self.get_state():
             if self.GoalState[self.State.index(i)] != i:
+                # heuristic could be optimized by adding the cost to move the tile (1-9) or (10-15)
                 count = count + 1
         return count
 
     def heuristic2(self):
         count = 0
+        # The index into the list is the (vertical, horizontal) distance from the top left tile
         position = [(0, 0), (0, 1), (0, 2), (0, 3),
                     (1, 0), (1, 1), (1, 2), (1, 3),
                     (2, 0), (2, 1), (2, 2), (2, 3),
@@ -181,7 +183,19 @@ class Board:
 
 
 # Modify the input removing braces and converting to list of integers
-def getInput(inputStr):
+def get_start_input(inputStr):
+    state = input(inputStr)
+    state = state.replace(']', '').replace('[', '').split()
+    x = []
+    for i in state:
+        x.append(int(i))
+    if not len(x) == 16:
+        print("Input is to correct length!!")
+        x = get_start_input(inputStr)
+    return x
+
+
+def get_goal_input(inputStr):
     state = input(inputStr)
     state = state.replace(']', '').replace('[', '').split()
     x = []
@@ -191,7 +205,7 @@ def getInput(inputStr):
 
 
 # construct the start state list
-def constructState(states):
+def construct_state(states):
     x = []
     i = 0
     while i < 16:
@@ -200,74 +214,102 @@ def constructState(states):
     return x
 
 
-def performSearch(current_board, goalBoard):
+def perform_search(current_board, goal_board):
     # Initialize the open list for the queue
-    openList = []
+    open_list = []
     # Initialize the closed list
-    closedList = []
+    closed_list = []
     # Add first board to the queue
-    heapq.heappush(openList, (current_board.FN, current_board))
+    heapq.heappush(open_list, (current_board.FN, current_board))
+
+    start_board = deepcopy(current_board)
 
     # Create start time for timeout
     start_time = time.time()
     # timeout variable
     time_out = False
-
-    while len(openList) != 0:
-        if current_board == goalBoard:
+    final_time = 0
+    print("===================================================")
+    # Expand when open list is not empty
+    while len(open_list) != 0:
+        # Check if we found the goal board
+        if current_board == goal_board:
+            final_time = time.time()-start_time
             break
-        if current_board not in closedList:
+        # Expand all directions ans ensure board isn't in the closed list
+        if current_board not in closed_list:
             if current_board.validate_left():
-                heapq.heappush(openList, (current_board.FN, current_board.move_left()))
+                heapq.heappush(open_list, (current_board.FN, current_board.move_left()))
             if current_board.validate_down():
-                heapq.heappush(openList, (current_board.FN, current_board.move_down()))
+                heapq.heappush(open_list, (current_board.FN, current_board.move_down()))
             if current_board.validate_up():
-                heapq.heappush(openList, (current_board.FN, current_board.move_up()))
+                heapq.heappush(open_list, (current_board.FN, current_board.move_up()))
             if current_board.validate_right():
-                heapq.heappush(openList, (current_board.FN, current_board.move_right()))
-            closedList.append(current_board)
-        current_board = deepcopy(heapq.heappop(openList)[1])
-        if time.time()-start_time > 30:
+                heapq.heappush(open_list, (current_board.FN, current_board.move_right()))
+            # Add the board to the closed list after expanding
+            closed_list.append(current_board)
+        # Deep Copy and assign the new current board
+        current_board = deepcopy(heapq.heappop(open_list)[1])
+        # Ensure it hasn't taken 5 min or longer to expand
+        if time.time()-start_time > 300:
             time_out = True
             break
 
+    # Display time out error message
     if time_out:
         print("Error: Time limit for search exceeded")
+        if current_board.HNControl == 0:
+            print("No solution found for the board using BFS")
+        elif current_board.HNControl == 1:
+            print("No solution found for the board using A* Heuristic 1")
+        else:
+            print("No solution found for the board using A* Heuristic 2")
+        print(start_board.State[0:4])
+        print(start_board.State[4:8])
+        print(start_board.State[8:12])
+        print(start_board.State[12:16])
     else:
+        # Print out the sequence of moves
         count = 1
         while current_board.get_id() != 0:
             current_board.print_board_info()
-            for x in closedList:
+            for x in closed_list:
                 if current_board.get_parent_id() == x.get_id():
                     current_board = deepcopy(x)
                     break
             count = count + 1
-
         current_board.print_board_info()
+        if current_board.HNControl == 0:
+            print("Solution found for the above path using BFS")
+        elif current_board.HNControl == 1:
+            print("Solution found for the above path using A* Heuristic 1")
+        else:
+            print("Solution found for the above path using A* Heuristic 2")
+
+        print("Solution fount in " + str(final_time) + " seconds")
         print("Number of Moves Required = " + str(count))
 
-    print("Number of Nodes Expanded = " + str(len(openList) + len(closedList)))
-    print("Number of Nodes in Closed List = " + str(len(closedList)))
-    print("===================================================")
+    print("Number of Nodes Expanded = " + str(len(open_list) + len(closed_list)))
+    print("Number of Nodes in Closed List = " + str(len(closed_list)))
     print("===================================================")
     print("===================================================\n")
 
 
 def main():
     # get user input
-    # startList = getInput("Please input the starting state with 16 digits separated by a space: ")
-    # goalList = getInput("Please input the goal state with 16 digits separated by a space: ")
+    start_list = get_start_input("Please input the starting state with 16 digits separated by a space: ")
+    goal_list = get_goal_input("Please input the goal state with 16 digits separated by a space (enter nothing to use default): ")
+    if len(goal_list) == 0:
+        goal_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0]
 
-    # startList = [5, 1, 3, 4, 2, 10, 6, 8, 13, 9, 7, 12, 0, 14, 11, 15]
-    startList = [1, 0, 3, 4, 5, 2, 7, 8, 9, 6, 15, 11, 13, 10, 14, 12]
-    goalList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0]
+    # Do all the types of Searches
     for control in range(0, 3):
-        startState = constructState(startList)
-        goalState = constructState(goalList)
-        currentBoard = Board(0, 0, startState, goalState, control, 0, 0)
-        goalBoard = Board(-1, -1, goalState, goalState, control, 0, 0)
+        start_state = construct_state(start_list)
+        goal_state = construct_state(goal_list)
+        current_board = Board(0, 0, start_state, goal_state, control, 0, 0)
+        goal_board = Board(-1, -1, goal_state, goal_state, control, 0, 0)
 
-        performSearch(currentBoard, goalBoard)
+        perform_search(current_board, goal_board)
 
 
 if __name__ == '__main__':
